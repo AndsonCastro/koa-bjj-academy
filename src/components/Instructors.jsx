@@ -9,7 +9,7 @@ const instructors = [
     role: 'Head Coach & Fundador',
     bio: 'Com mais de 15 anos de experiência no tatame, Marcus fundou a KOA Academy com a missão de transformar vidas através do Jiu-Jitsu. Campeão estadual e nacional, ele traz uma abordagem técnica e humana que define a identidade da equipe.',
     specialty: 'Guarda, Submissions & Competição',
-    photo: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80',
+    photo: 'https://images.unsplash.com/photo-1720730978839-844e7214e1ca?w=400&q=80',
     instagram: 'https://www.instagram.com/koajiujitsuacademy/',
   },
   {
@@ -18,7 +18,7 @@ const instructors = [
     role: 'Professor Kids & Juvenil',
     bio: 'Carlos é especializado no desenvolvimento infantil através das artes marciais. Com formação em educação física e pedagogia, ele criou uma metodologia única que combina técnica, diversão e desenvolvimento de caráter para crianças e adolescentes.',
     specialty: 'Pedagogia Esportiva & Kids BJJ',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    photo: 'https://images.unsplash.com/photo-1554302242-40743152783a?w=400&q=80',
     instagram: 'https://www.instagram.com/koajiujitsuacademy/',
   },
   {
@@ -27,7 +27,7 @@ const instructors = [
     role: 'Professora Feminino & Adulto',
     bio: 'Ana é uma das líderes do programa feminino da KOA. Atleta de alto nível e referência no Jiu-Jitsu feminino, ela criou um ambiente acolhedor e empoderador onde mulheres de todas as idades encontram confiança, força e pertencimento.',
     specialty: 'Jiu-Jitsu Feminino & Self-Defense',
-    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
+    photo: 'https://images.unsplash.com/photo-1684909927604-8b3fbc21146a?w=400&q=80',
     instagram: 'https://www.instagram.com/koajiujitsuacademy/',
   },
 ];
