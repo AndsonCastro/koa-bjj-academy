@@ -13,7 +13,7 @@ export default function CTAFinal() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80')",
+            "url('https://images.unsplash.com/photo-1682545888368-587f56efd06e?w=1920&q=80')",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-black/80 to-[#0a0a0a]" />

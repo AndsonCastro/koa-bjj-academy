@@ -76,7 +76,7 @@ export default function KidsSection() {
               className="relative rounded-2xl overflow-hidden aspect-video"
             >
               <img
-                src="https://images.unsplash.com/photo-1546519638701-8e74c0825e5a?w=900&q=80"
+                src="https://images.unsplash.com/photo-1769095216189-0ae27b6cc726?w=900&q=80"
                 alt="Kids BJJ Training"
                 className="w-full h-full object-cover"
               />

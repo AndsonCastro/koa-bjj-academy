@@ -22,7 +22,7 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5]">
               <img
-                src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&q=80"
+                src="https://images.unsplash.com/photo-1634467472970-8be9b2d1499a?w=800&q=80"
                 alt="KOA BJJ Training"
                 className="w-full h-full object-cover"
               />

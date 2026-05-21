@@ -5,43 +5,43 @@ import SectionTitle from './SectionTitle';
 
 const photos = [
   {
-    src: 'https://images.unsplash.com/photo-1555597673-b21d5c935865?w=600&q=80',
-    alt: 'BJJ Training',
+    src: 'https://images.unsplash.com/photo-1542937307-a570f5351942?w=600&q=80',
+    alt: 'Treino Jiu-Jitsu',
     span: 'col-span-2 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=600&q=80',
-    alt: 'Ground Work',
+    src: 'https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=600&q=80',
+    alt: 'Sparring no Gi',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80',
-    alt: 'Martial Arts',
+    src: 'https://images.unsplash.com/photo-1634467472970-8be9b2d1499a?w=600&q=80',
+    alt: 'Técnica no Tatame',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1546519638701-8e74c0825e5a?w=600&q=80',
-    alt: 'Kids Training',
+    src: 'https://images.unsplash.com/photo-1646904362560-994ca9dfb0b4?w=600&q=80',
+    alt: 'Kimono Azul',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=600&q=80',
-    alt: 'Gym Atmosphere',
+    src: 'https://images.unsplash.com/photo-1677170202299-d2edadfa76a1?w=600&q=80',
+    alt: 'Treino com Gi',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80',
-    alt: 'Training Session',
+    src: 'https://images.unsplash.com/photo-1542937307-e90d0cc07237?w=600&q=80',
+    alt: 'Brazilian Jiu-Jitsu',
     span: 'col-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=600&q=80',
-    alt: 'Strength Training',
+    src: 'https://images.unsplash.com/photo-1769095207072-0c84d9b7b9ee?w=600&q=80',
+    alt: 'Kids no Tatame',
     span: '',
   },
   {
-    src: 'https://images.unsplash.com/photo-1581009137042-c552e485697a?w=600&q=80',
-    alt: 'Competition',
+    src: 'https://images.unsplash.com/photo-1747331796135-0e2354a712e4?w=600&q=80',
+    alt: 'Competição BJJ',
     span: '',
   },
 ];
