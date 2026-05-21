@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
+import { wa } from '../utils/wa';
 
 export default function CTAFinal() {
   return (
@@ -28,7 +29,7 @@ export default function CTAFinal() {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-6"
         >
-          <img src="/logo.png" alt="KOA BJJ" className="w-24 h-24 object-contain" />
+          <img src="/logo.png" alt="KOA BJJ" className="w-24 h-24 object-contain rounded-full" />
         </motion.div>
 
         <motion.div
@@ -85,7 +86,7 @@ export default function CTAFinal() {
           className="flex flex-wrap justify-center gap-4"
         >
           <a
-            href="https://wa.me/13056140983"
+            href={wa('Olá! Quero dar o primeiro passo e fazer parte da família KOA BJJ Academy! 🥋')}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-base px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-2xl hover:shadow-[#d4af37]/30 uppercase tracking-wide"
@@ -113,13 +114,13 @@ export default function CTAFinal() {
           className="mt-16 flex flex-wrap justify-center gap-8 text-center"
         >
           {[
-            { label: 'Localização', value: 'Miami, FL' },
-            { label: 'WhatsApp', value: '+1 (305) 614-0983' },
-            { label: 'Instagram', value: '@koajiujitsuacademy' },
-          ].map(({ label, value }) => (
+            { label: 'Localização', value: 'Fortaleza - CE, Brasil', href: 'https://www.google.com/maps/search/?api=1&query=Av.+Bernardo+Manuel,+12600,+Prefeito+José+Walter,+Fortaleza,+CE,+60810-670' },
+            { label: 'WhatsApp', value: '+1 (305) 614-0983', href: wa('Olá! Quero dar o primeiro passo e fazer parte da família KOA BJJ Academy! 🥋') },
+            { label: 'Instagram', value: '@koajiujitsuacademy', href: 'https://www.instagram.com/koajiujitsuacademy/' },
+          ].map(({ label, value, href }) => (
             <div key={label}>
               <div className="text-gray-600 text-xs uppercase tracking-widest mb-1">{label}</div>
-              <div className="text-gray-300 font-medium">{value}</div>
+              <a href={href} target="_blank" rel="noopener noreferrer" className="text-gray-300 font-medium hover:text-[#d4af37] transition-colors">{value}</a>
             </div>
           ))}
         </motion.div>

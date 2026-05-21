@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Check, MessageCircle, Star } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import { wa } from '../utils/wa';
 
 const plans = [
   {
@@ -131,7 +132,7 @@ export default function Plans() {
               </ul>
 
               <a
-                href="https://wa.me/13056140983"
+                href={wa(`Olá! Tenho interesse no Plano ${plan.name} da KOA BJJ Academy. Pode me passar mais informações? 🥋`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center justify-center gap-2 font-bold text-sm py-3.5 rounded-full uppercase tracking-wide transition-all hover:scale-105 ${

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ChevronDown, MessageCircle, CalendarDays, Shield, Users, Star, Trophy } from 'lucide-react';
+import { wa } from '../utils/wa';
 
 const stats = [
   { value: '200+', label: 'Alunos Ativos' },
@@ -75,14 +76,14 @@ export default function Hero() {
             className="flex flex-wrap gap-4 mb-14"
           >
             <a
-              href="#planos"
+              href={wa('Olá! Gostaria de agendar uma aula experimental gratuita na KOA BJJ Academy! 🥋')}
               className="flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 hover:shadow-xl hover:shadow-[#d4af37]/30 uppercase tracking-wide"
             >
               <CalendarDays className="w-5 h-5" />
               Agende uma Aula Experimental
             </a>
             <a
-              href="https://wa.me/13056140983"
+              href={wa('Olá! Vim pelo site da KOA BJJ Academy e gostaria de mais informações. 🥋')}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 border-2 border-white/30 hover:border-[#d4af37] text-white hover:text-[#d4af37] font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 backdrop-blur-sm uppercase tracking-wide"

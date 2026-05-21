@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, User } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import { wa } from '../utils/wa';
 
 const schedule = [
   { day: 'Segunda', time: '07:00 – 08:00', name: 'Adulto Iniciante', type: 'gi', level: 'Iniciante', instructor: 'Prof. Marcus' },
@@ -105,7 +106,7 @@ export default function Schedule() {
         <div className="mt-10 text-center">
           <p className="text-gray-600 text-sm mb-5">* Horários podem sofrer alterações. Confirme pelo WhatsApp antes de comparecer.</p>
           <a
-            href="https://wa.me/13056140983"
+            href={wa('Olá! Gostaria de confirmar os horários de treino da KOA BJJ Academy. 🥋')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-sm px-8 py-3.5 rounded-full transition-all hover:scale-105 uppercase tracking-wide"

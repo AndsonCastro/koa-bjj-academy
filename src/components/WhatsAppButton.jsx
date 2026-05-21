@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { MessageCircle, X } from 'lucide-react';
+import { wa } from '../utils/wa';
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -48,7 +49,7 @@ export default function WhatsAppButton() {
           </AnimatePresence>
 
           <motion.a
-            href="https://wa.me/13056140983"
+            href={wa('Olá! Vim pelo site da KOA BJJ Academy e gostaria de saber mais sobre as aulas! 🥋')}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}

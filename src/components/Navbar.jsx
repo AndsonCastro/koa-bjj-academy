@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, MessageCircle } from 'lucide-react';
+import { wa } from '../utils/wa';
 
 const navLinks = [
   { href: '#sobre', label: 'Sobre' },
@@ -35,7 +36,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 group">
-          <img src="/logo.png" alt="KOA BJJ" className="h-11 w-11 object-contain" />
+          <img src="/logo.png" alt="KOA BJJ" className="h-11 w-11 object-contain rounded-full" />
           <div className="hidden sm:block leading-tight">
             <div className="font-heading text-xl text-white tracking-wide group-hover:text-[#d4af37] transition-colors">KOA BJJ</div>
             <div className="text-[9px] text-[#d4af37] tracking-[0.2em] uppercase">Academy · Since 2022</div>
@@ -57,7 +58,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="https://wa.me/13056140983"
+            href={wa('Olá! Gostaria de agendar minha aula experimental gratuita na KOA BJJ Academy! 🥋')}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-xs px-5 py-2.5 rounded-full uppercase tracking-wide transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-[#d4af37]/20"
@@ -97,7 +98,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://wa.me/13056140983"
+                href={wa('Olá! Gostaria de agendar minha aula experimental gratuita na KOA BJJ Academy! 🥋')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 flex items-center justify-center gap-2 bg-[#d4af37] text-black font-bold px-6 py-3.5 rounded-full uppercase tracking-wide"

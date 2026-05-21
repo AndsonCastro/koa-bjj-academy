@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import { wa } from '../utils/wa';
 
 const faqs = [
   {
@@ -106,7 +107,7 @@ export default function FAQ() {
         >
           <p className="text-gray-400 mb-4">Ainda tem dúvidas? Fale diretamente com a gente!</p>
           <a
-            href="https://wa.me/13056140983"
+            href={wa('Olá! Tenho algumas dúvidas sobre a KOA BJJ Academy e gostaria de mais informações. 🥋')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-sm px-8 py-3.5 rounded-full transition-all hover:scale-105 uppercase tracking-wide"

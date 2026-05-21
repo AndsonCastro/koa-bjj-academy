@@ -1,5 +1,6 @@
 import { MessageCircle, MapPin, Phone } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
+import { wa } from '../utils/wa';
 
 const quickLinks = [
   { href: '#sobre', label: 'Sobre a KOA' },
@@ -18,7 +19,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
-              <img src="/logo.png" alt="KOA BJJ" className="h-14 w-14 object-contain" />
+              <img src="/logo.png" alt="KOA BJJ" className="h-14 w-14 object-contain rounded-full" />
               <div>
                 <div className="font-heading text-2xl text-white tracking-wide">KOA BJJ Academy</div>
                 <div className="text-[10px] text-[#d4af37] tracking-[0.2em] uppercase">Brazilian Jiu-Jitsu · Since 2022</div>
@@ -29,7 +30,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="https://wa.me/13056140983"
+                href={wa('Olá! Gostaria de agendar minha aula experimental gratuita na KOA BJJ Academy! 🥋')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 bg-[#d4af37]/10 hover:bg-[#d4af37] border border-[#d4af37]/30 rounded-xl text-[#d4af37] hover:text-black transition-all duration-200"
@@ -71,12 +72,21 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" />
-                <span className="text-gray-500 text-sm">Miami, Florida — USA</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Av.+Bernardo+Manuel,+12600,+Prefeito+José+Walter,+Fortaleza,+CE,+60810-670"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-500 hover:text-[#d4af37] text-sm transition-colors leading-relaxed"
+                >
+                  Av. Bernardo Manuel, 12600<br />
+                  Prefeito José Walter<br />
+                  Fortaleza - CE, 60810-670
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" />
                 <a
-                  href="https://wa.me/13056140983"
+                  href={wa('Olá! Gostaria de falar com a KOA BJJ Academy! 🥋')}
                   className="text-gray-500 hover:text-[#d4af37] text-sm transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -85,7 +95,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <Instagram className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" />
+                <InstagramIcon className="w-4 h-4 text-[#d4af37] mt-0.5 flex-shrink-0" />
                 <a
                   href="https://www.instagram.com/koajiujitsuacademy/"
                   className="text-gray-500 hover:text-[#d4af37] text-sm transition-colors"
@@ -99,7 +109,7 @@ export default function Footer() {
 
             <div className="mt-8">
               <a
-                href="https://wa.me/13056140983"
+                href={wa('Olá! Gostaria de agendar minha aula experimental gratuita na KOA BJJ Academy! 🥋')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-xs px-5 py-2.5 rounded-full transition-all hover:scale-105 uppercase tracking-wide"

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Shield, Star, Heart, Users, Brain, Smile, MessageCircle } from 'lucide-react';
+import { wa } from '../utils/wa';
 
 const pillars = [
   { icon: Shield, label: 'Confiança & Autodefesa', desc: 'Seu filho aprende a se proteger com responsabilidade e segurança.' },
@@ -56,7 +57,7 @@ export default function KidsSection() {
             </div>
 
             <a
-              href="https://wa.me/13056140983"
+              href={wa('Olá! Gostaria de agendar uma aula experimental gratuita para meu filho na KOA BJJ Academy! 👦🥋')}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#d4af37] hover:bg-[#f0d060] text-black font-bold text-sm px-8 py-4 rounded-full transition-all hover:scale-105 uppercase tracking-wide"
